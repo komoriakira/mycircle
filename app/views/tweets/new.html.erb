@@ -1,0 +1,19 @@
+<h1>GeekTwitter</h1>
+<h3>新規Tweet</h3>
+<%= form_for @tweet do |f| %>
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.select :title,
+    [["節電", "節電"],
+    ["節水", "節水"],
+    ["ごみ削減", "ごみ削減"],
+    ["その他","その他"]], include_blank: "選択して下さい" %>
+    <%= f.label :nickname %>
+    <%= f.text_field :nickname, :size => 100 %>
+    <%= f.label :body %>
+    <%= f.text_area :body, :size => 140 %>
+  </div>
+  <%= f.submit "Tweetする" %>
+<% end %>
+<%= link_to "Tweet一覧に戻る", tweets_index_path %>
+<%= link_to 'Top Pge', suzus_top_path %>
