@@ -1,4 +1,31 @@
-<h1>トップページ</h1>
-<%= link_to 'About Us', suzus_top2_path %>
-<%= link_to 'Share', tweets_index_path %>
+<div class="top">
+ <div class="toptitle">
+ Refuse Disposable
+ </div>
+地球温暖化をはじめとする<br>
+多くの環境問題の解決のために<br>
+対策が急がれる<br>
+「ごみ削減」<br>
+<br>
+今、私たちにできることとは<br>
+</div>
+
+
+<div class="aboutus">
+<%= link_to 'About Us', suzus_top2_path, class:"aboutuslink" %><br>
+私たちの活動<br>
+私たちの目標<br>
+私たちの原動力<br>
+ </div>
+
+
+<div class="share">
+<%= link_to 'Share', tweets_index_path, class:"sharelink" %><br>
+あなたの取り組み<br>
+環境問題解決のための<br>
+クリエイティブなアイディア<br>
+シェアしてみませんか？<br>
+</div>
+
+
 <%= link_to '診断へ', new_perfume_path %>
